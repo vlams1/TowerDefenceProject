@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba263502e0b2e6428b3bee746263123, type: 3}
   m_Name: Tower 1
   m_EditorClassIdentifier: 
-  cost: 0
-  prefab: {fileID: 0}
-  health: 0
-  range: 0
-  cooldown: 0
-  projectile: {fileID: 0}
-  upgrade: {fileID: 0}
+  cost: 200
+  prefab: {fileID: 8769416472986769155, guid: 80a49ad0aa48e5e42b19b23a7a74ff8e, type: 3}
+  health: 25
+  range: 3
+  cooldown: 0.2
+  projectile: {fileID: 11400000, guid: 8d6eae5d8b5578e41a4f3f51b88bccd2, type: 2}
+  upgrade: {fileID: 11400000, guid: edd8e9b77df520142b8ed73b91c1479d, type: 2}

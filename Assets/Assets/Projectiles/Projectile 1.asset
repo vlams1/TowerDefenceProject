@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Projectile 1
   m_EditorClassIdentifier: 
   target: 0
-  height: 0
-  strength: 0
-  anticipation: 0
-  prefab: {fileID: 0}
+  height: 3
+  strength: 1.2
+  anticipation: 0.8
+  prefab: {fileID: 4120178548342056866, guid: 6ca44f7516855e9408a501c759bc4cb8, type: 3}
