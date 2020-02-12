@@ -62,7 +62,7 @@ public class WaveController : MonoBehaviour {
 		else position.y = position.y < 0f ? -gridSize : gridSize;
 		GameObject enemy = Instantiate(newType.prefab);
 		enemy.transform.parent = transform;
-	    enemy.transform.position = new Vector3(position.x, 0f, position.y);
+	    enemy.transform.position = new Vector3(position.x, enemy.transform.position.y, position.y);
 	    EnemyController controller = enemy.AddComponent<EnemyController>();
 	    controller.speed = newType.speed;
 	    controller.health = newType.health;

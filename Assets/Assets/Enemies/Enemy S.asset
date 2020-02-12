@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1762a66f6cee98b48a13775f4e25c96a, type: 3}
+  m_Name: Enemy S
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4091010925902885954, guid: afaef419edf364e4b8106fc952641674, type: 3}
+  speed: 1.5
+  health: 5
+  strength: 1
+  level: 2

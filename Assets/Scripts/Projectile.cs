@@ -14,11 +14,12 @@ public class Projectile : MonoBehaviour {
             Collider[] colliders = Physics.OverlapSphere(transform.position, range);
             foreach (Collider collider in colliders)
                 if (collider.gameObject.GetComponent<EnemyController>()) collider.gameObject.GetComponent<EnemyController>().Damage(damage);
-            GameObject effect = Instantiate(effectPrefab);
-            effect.transform.position = transform.position;
-            Destroy destroy = gameObject.AddComponent<Destroy>();
-            destroy.destroy = 2f;
-            Destroy(this);
+
+            if (effectPrefab) {
+                GameObject effect = Instantiate(effectPrefab);
+                effect.transform.position = transform.position;
+            }
+            Destroy(gameObject);
         }
     }
 

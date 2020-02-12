@@ -36,7 +36,7 @@ public class BuildController : MonoBehaviour {
 				if (colliders.Length <= 0) {
 					if (money >= towerTypes[selected].cost) {
 						GameObject tower = Instantiate(towerTypes[selected].prefab);
-						tower.transform.position = transform.position;
+						tower.transform.position += transform.position;
 						TowerController controller = tower.AddComponent<TowerController>();
 						controller.UpdateType(towerTypes[selected]);
 						money -= towerTypes[selected].cost;
